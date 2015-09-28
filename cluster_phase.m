@@ -9,7 +9,7 @@ function rho_group =  cluster_phase(theta_i)
     theta_s_k = 1/N*sum(exp(1i*theta_k_ti));
     theta_k_hat = angle(theta_s_k);
     
-    rho_group_i = abs(1/n*sum(exp(1i*theta_k_ti-repmat(theta_k_hat,N,1)),2));
+    rho_group_i = abs(1/n*sum(exp(1i*(theta_k_ti-repmat(theta_k_hat,N,1)),2));
     rho_group = mean(rho_group_i);    
 
 end
